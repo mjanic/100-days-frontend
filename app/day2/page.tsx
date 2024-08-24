@@ -14,9 +14,9 @@ export default function Day2 () {
         <div className="h-[100vh] flex justify-center items-center">
             <div className="flex min-h-[350px] gap-2 p-2">
                 <div className="flex flex-col gap-1">
-                    <Image onClick={()=>setSelectedImage('1')} className={`${selectedImage==='1' && 'rounded-md border-2 border-blue-500'} cursor-pointer`} width={60} height={75} alt="polo-shirt1" src="/blue-shirt1.jpg"/>
-                    <Image onClick={()=>setSelectedImage('2')} className={`${selectedImage==='2' && 'rounded-md border-2 border-blue-500'} cursor-pointer`} width={60} height={75} alt="polo-shirt2" src="/blue-shirt2.jpg"/>
-                    <Image onClick={()=>setSelectedImage('3')} className={`${selectedImage==='3' && 'rounded-md border-2 border-blue-500'} cursor-pointer`} width={60} height={75} alt="polo-shirt3" src="/blue-shirt3.jpg"/>
+                    <Image onClick={()=>setSelectedImage('1')} className={`${selectedImage==='1' && 'border-2 border-blue-500'} rounded-md cursor-pointer`} width={60} height={75} alt="polo-shirt1" src="/blue-shirt1.jpg"/>
+                    <Image onClick={()=>setSelectedImage('2')} className={`${selectedImage==='2' && 'border-2 border-blue-500'} rounded-md cursor-pointer`} width={60} height={75} alt="polo-shirt2" src="/blue-shirt2.jpg"/>
+                    <Image onClick={()=>setSelectedImage('3')} className={`${selectedImage==='3' && 'border-2 border-blue-500'} rounded-md cursor-pointer`} width={60} height={75} alt="polo-shirt3" src="/blue-shirt3.jpg"/>
                 </div>
                 <div className="max-w-[350px]">
                 <Image className="rounded-[5px] shadow-sm" width={400} height={500} alt="polo-shirt1" src={`/blue-shirt${selectedImage}.jpg`}/>
