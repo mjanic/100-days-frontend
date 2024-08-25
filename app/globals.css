@@ -87,3 +87,7 @@
 .custom-shape-divider-top-1724163656 .shape-fill {
   fill: #933855;
 }
+
+.city-map-bg {
+  background-image: url("/bloody-bg.png");
+}
