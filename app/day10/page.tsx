@@ -21,7 +21,7 @@ export default function Day10() {
             <CarouselItem key={index}>
               <div className="p-1 flex items-center justify-center">
                 <Image
-                  className="h-[400px] w-[500px]"
+                  className="h-[50vh] w-[90vh]"
                   src={`/nature${(index + 1).toString()}.jpg`}
                   alt={`nature${index}`}
                   width={250}
