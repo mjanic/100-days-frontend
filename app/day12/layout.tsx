@@ -1,4 +1,4 @@
-export default function Day1Layout({
+export default function Day12Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
