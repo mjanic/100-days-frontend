@@ -1,7 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTicket } from "@fortawesome/free-solid-svg-icons";
-
 import EventCard from "./EventCard";
 
 export default function Day13() {
