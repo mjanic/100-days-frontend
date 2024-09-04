@@ -33,25 +33,45 @@ export default function SignUpWithEmail() {
       <CardContent className="w-full flex flex-col gap-4 pt-2">
         <div className="relative">
           <Input
-            className="peer focus-visible:ring-blue-500 focus-visible:ring-offset-0"
+            className="peer focus-visible:ring-blue-500 focus-visible:ring-offset-0 focus-visible:placeholder:text-transparent"
             id="name"
-            placeholder=" "
+            placeholder="Name"
           />
-          <label htmlFor="name">Name</label>
+          <label
+            className="absolute hidden -top-3 left-1 p-0.5 bg-white text-blue-500 text-[10px] font-bold peer-focus-visible:block"
+            htmlFor="name"
+          >
+            Name
+          </label>
         </div>
 
-        <Input
-          className="focus-visible:ring-blue-500 focus-visible:ring-offset-0"
-          id="email"
-          placeholder="Email"
-        />
         <div className="relative">
           <Input
-            className="focus-visible:ring-blue-500 focus-visible:ring-offset-0"
+            className="peer focus-visible:ring-blue-500 focus-visible:ring-offset-0 focus-visible:placeholder:text-transparent"
+            id="email"
+            type="email"
+            placeholder="Email"
+          />
+          <label
+            className="absolute hidden -top-3 left-1 p-0.5 bg-white text-blue-500 text-[10px] font-bold peer-focus-visible:block"
+            htmlFor="email"
+          >
+            Email
+          </label>
+        </div>
+        <div className="relative">
+          <Input
+            className="peer focus-visible:ring-blue-500 focus-visible:ring-offset-0 focus-visible:placeholder:text-transparent"
             type={passwordVisible ? "text" : "password"}
             id="password"
             placeholder="Password"
           />
+          <label
+            className="absolute hidden -top-3 left-1 p-0.5 bg-white text-blue-500 text-[10px] font-bold peer-focus-visible:block"
+            htmlFor="password"
+          >
+            Password
+          </label>
           <FontAwesomeIcon
             className="absolute transform right-2 text-slate-500 top-1/2 -translate-y-1/2 cursor-pointer"
             icon={passwordVisible ? faEyeSlash : faEye}
